@@ -1,8 +1,9 @@
 <template>
   <div class="search">
-    <div class="search__container">
+    <div class="search__container u-margin--top">
 
-      <div v-if="categories" class="select-menu">
+    <div class="menu-options u-margin--bottom">
+      <div v-if="categories" class="select-menu u-margin--right">
         <label for="" class="select-menu__label">Category:</label>
         <div class="select-menu__wrapper">
           <img src="../assets/arrow.png" class="select-menu__icon" />
@@ -23,6 +24,7 @@
           </select>
         </div>
       </div>
+    </div>
 
       <div v-if="results" class="img-grid">
         <div v-for="result in results" class="img-grid__item">

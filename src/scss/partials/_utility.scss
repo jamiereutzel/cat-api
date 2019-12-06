@@ -1,0 +1,17 @@
+/************************************************************
+Utility
+*************************************************************/
+
+.u-margin {
+    &--top { margin-top: $base-margin; }
+    &--right { margin-right: $base-margin; }
+    &--bottom { margin-bottom: $base-margin; }
+    &--left { margin-left: $base-margin; }
+}
+
+.u-padding {
+    &--top { padding-top: $base-padding; }
+    &--right { padding-right: $base-padding; }
+    &--bottom { padding-bottom: $base-padding; }
+    &--left { padding-left: $base-padding; }
+}
