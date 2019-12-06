@@ -12,16 +12,15 @@ Images
     @media (min-width: $screen-sm) { flex-direction: row; }
 
     &__item {
+        height: 300px;
+        padding: 5px;
 
-        @media (min-width: $screen-sm) { flex: 0 0 50%; }
-
-        @media (min-width: $screen-md) { flex: 0 0 33%; }
+        @media (min-width: $screen-md) { flex: 0 0 30%; }
     }
 
     &__img {
-        padding: 5px;
         width: 100%;
-        // height: 300px;
+        height: 300px;
         object-fit: cover;
     }
 }
