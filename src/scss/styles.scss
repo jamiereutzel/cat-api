@@ -11,3 +11,9 @@ Global Styles
 @import "partials/images";
 @import "partials/search";
 @import "partials/typography";
+
+
+#app {
+    max-width: 1000px;
+    margin: 0 auto;
+}
