@@ -1,1 +1,9 @@
-h1 { font-size: 100px; }
+/************************************************************
+Global Styles
+*************************************************************/
+
+// Globals
+@import "globals/variables";
+
+// Partials
+@import "partials/typography";
