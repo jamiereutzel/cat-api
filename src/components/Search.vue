@@ -1,11 +1,14 @@
 <template>
   <div class="search">
-    <button v-on:click="buttonClicked" class="btn">Click Me</button>
+    <div class="search__container">
+      <button v-on:click="buttonClicked" class="btn">Click Me</button>
 
-    <div v-if="result"
-      <img v-bind:src="result" />
+      <div v-if="result" class="img-container">
+        <img v-bind:src="result" class="img" />
+      </div>
     </div>
   </div>
+
 </template>
 
 <script>

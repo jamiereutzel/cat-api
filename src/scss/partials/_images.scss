@@ -1,0 +1,14 @@
+/************************************************************
+Images
+*************************************************************/
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $base-margin;
+}
+
+.img {
+    max-height: 500px;
+}

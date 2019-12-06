@@ -1,9 +1,10 @@
 /************************************************************
-Hero
+Search
 *************************************************************/
 
-.hero {
-    background-color: $yellow;
-    text-align: center;
-    padding: ($base-padding * 2);
+.search {
+    &__container {
+        text-align: center;
+        margin: $base-margin;
+    }
 }
