@@ -1,0 +1,25 @@
+/************************************************************
+Buttons
+*************************************************************/
+
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-family: $text-font;
+  font-weight: 600;
+  background: $default-white;
+  border: 2px solid $primary;
+  text-transform: uppercase;
+  color: $primary;
+  cursor: pointer;
+  transition: background $transition-duration, color $transition-duration;
+
+  &:focus,
+  &:hover {
+    border-color: $primary;
+    background-color: $primary;
+    color: $default-white;
+  }
+}

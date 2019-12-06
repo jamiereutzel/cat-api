@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <button v-on:click="buttonClicked">Click Me</button>
+    <button v-on:click="buttonClicked" class="btn">Click Me</button>
 
     <div v-if="result"
       <img v-bind:src="result" />
