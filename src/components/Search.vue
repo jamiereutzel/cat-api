@@ -57,7 +57,7 @@
     methods: {
 
       getCats() {
-        axios.get('https://api.thecatapi.com/v1/images/search?limit=15').then((response) => {
+        axios.get('https://api.thecatapi.com/v1/images/search?limit=12').then((response) => {
           this.results = response.data;
           console.log(response.data);
         }).catch( error => { console.log(error); });
@@ -76,13 +76,13 @@
       },
 
       onCategoryChange(event) {
-        axios.get('https://api.thecatapi.com/v1/images/search?limit=15&category_ids='+event.target.value).then( response => {
+        axios.get('https://api.thecatapi.com/v1/images/search?limit=12&category_ids='+event.target.value).then( response => {
           this.results = response.data;
         }).catch( error => { console.log(error); });
       },
 
       onBreedChange(event) {
-        axios.get('https://api.thecatapi.com/v1/images/search?limit=15&breed_id='+event.target.value).then( response => {
+        axios.get('https://api.thecatapi.com/v1/images/search?limit=12&breed_id='+event.target.value).then( response => {
           this.results = response.data;
         }).catch( error => { console.log(error); });
       }
