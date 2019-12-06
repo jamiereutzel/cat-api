@@ -7,6 +7,16 @@ Buttons
     display: inline-flex;
     flex-direction: column;
     text-align: left;
+    margin-right: 0;
+
+    &:last-child { margin-top: $base-margin; }
+
+    @media (min-width: $screen-sm) {
+        margin-right: ($base-margin * 2);
+        margin-top: 0;
+
+        &:last-child { margin-top: 0; }
+    }
 
     &__wrapper {
         position: relative;
@@ -16,8 +26,8 @@ Buttons
     &__select {
         -webkit-appearance: none;
         -moz-appearance: none;
-        appearance: none;       /* Remove default arrow */
-
+        appearance: none;
+        width: 350px;
         padding-left: $base-padding;
         height: 51px;
         font-size: 20px;
@@ -30,6 +40,11 @@ Buttons
         color: $primary;
     }
 
+    &__label {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
     &__icon {
         height: 15px;
         width: 15px;
@@ -39,5 +54,13 @@ Buttons
         pointer-events: none;
         transform: translate(-50%, -50%);
     }
+}
 
+.menu-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $screen-sm) { flex-direction: row; }
 }

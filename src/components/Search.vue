@@ -3,11 +3,11 @@
     <div class="search__container u-margin--top">
 
     <div class="menu-options u-margin--bottom">
-      <div v-if="categories" class="select-menu u-margin--right">
-        <label for="" class="select-menu__label">Category:</label>
+      <div v-if="categories" class="select-menu">
+        <label for="select-menu-category" class="select-menu__label">Category:</label>
         <div class="select-menu__wrapper">
           <img src="http://cdn.onlinewebfonts.com/svg/img_106603.png" class="select-menu__icon" />
-          <select class="select-menu__select" @change="onCategoryChange($event)">
+          <select class="select-menu__select" id="select-menu-category" @change="onCategoryChange($event)">
             <option value="" disabled selected hidden>Select</option>
             <option v-for="category in categories" v-bind:value="category.id">{{category.name}}</option>
           </select>
@@ -15,10 +15,10 @@
       </div>
 
       <div v-if="breeds" class="select-menu">
-        <label for="" class="select-menu__label">Breeds:</label>
+        <label for="select-menu-breed" class="select-menu__label">Breeds:</label>
         <div class="select-menu__wrapper">
           <img src="http://cdn.onlinewebfonts.com/svg/img_106603.png" class="select-menu__icon" />
-          <select class="select-menu__select" @change="onBreedChange($event)">
+          <select class="select-menu__select" id="select-menu-breed" @change="onBreedChange($event)">
             <option value="" disabled selected hidden>Select</option>
             <option v-for="breed in breeds" v-bind:value="breed.id">{{breed.name}}</option>
           </select>
@@ -59,6 +59,7 @@
       getCats() {
         axios.get('https://api.thecatapi.com/v1/images/search?limit=15').then((response) => {
           this.results = response.data;
+          console.log(response.data);
         }).catch( error => { console.log(error); });
       },
 
