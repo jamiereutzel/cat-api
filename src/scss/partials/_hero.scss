@@ -1,10 +1,10 @@
 /************************************************************
-Global Styles
+Hero
 *************************************************************/
 
-// Globals
-@import "globals/variables";
+.hero {
 
-// Partials
-@import "partials/hero";
-@import "partials/typography";
+    background-color: $yellow;
+    text-align: center;
+    padding: ($base-padding * 2);
+}

@@ -1,0 +1,30 @@
+/************************************************************
+Typography
+*************************************************************/
+
+/*
+ * Global Typographic Treatment
+ *
+ ************************************************************/
+
+html,
+body {
+    font-family: $text-font;
+    font-size: $base-font-size;
+    font-weight: 600;
+    line-height: $base-line-height;
+    color: $text-color;
+}
+
+/*
+* Headers
+*
+************************************************************/
+
+h1,
+.h1 {
+    font-size: 48px;
+    font-family: $primary-font;
+    text-transform: uppercase;
+    color: $default-black;
+}
