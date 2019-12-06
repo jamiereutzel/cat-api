@@ -1,0 +1,43 @@
+/************************************************************
+Buttons
+*************************************************************/
+
+.select-menu {
+
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+    }
+
+    &__select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;       /* Remove default arrow */
+
+        padding-left: $base-padding;
+        height: 51px;
+        font-size: 20px;
+        font-family: $text-font;
+        font-weight: 600;
+        background: $gray;
+        border: 2px solid $primary;
+        border-radius: 0;
+        text-transform: uppercase;
+        color: $primary;
+    }
+
+    &__icon {
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+    }
+
+}

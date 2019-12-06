@@ -3,14 +3,27 @@
     <div class="search__container">
       <button v-on:click="buttonClicked" class="btn">Click Me</button>
 
-      <select v-if="categories" class="">
-        <option v-for="category in categories" value="category.id">{{category.name}}</option>
-      </select>
+      <div v-if="categories" class="select-menu">
+        <label for="" class="select-menu__label">Category:</label>
+        <div class="select-menu__wrapper">
+          <img src="../assets/arrow.png" class="select-menu__icon" />
+          <select class="select-menu__select">
+            <option value="" disabled selected hidden>Select</option>
+            <option v-for="category in categories" value="category.id">{{category.name}}</option>
+          </select>
+        </div>
+      </div>
 
-      <select v-if="breeds" class="">
-        <option v-for="breed in breeds" value="breed.id">{{breed.name}}</option>
-      </select>
-
+      <div v-if="breeds" class="select-menu">
+        <label for="" class="select-menu__label">Breeds:</label>
+        <div class="select-menu__wrapper">
+          <img src="../assets/arrow.png" class="select-menu__icon" />
+          <select class="select-menu__select">
+            <option value="" disabled selected hidden>Select</option>
+            <option v-for="breed in breeds" value="breed.id">{{breed.name}}</option>
+          </select>
+        </div>
+      </div>
 
       <div v-if="results" class="img-grid">
         <div v-for="result in results" class="img-grid__item">

@@ -9,7 +9,7 @@ Buttons
   font-size: 20px;
   font-family: $text-font;
   font-weight: 600;
-  background: $default-white;
+  background: $gray;
   border: 2px solid $primary;
   text-transform: uppercase;
   color: $primary;
@@ -20,6 +20,6 @@ Buttons
   &:hover {
     border-color: $primary;
     background-color: $primary;
-    color: $default-white;
+    color: $gray;
   }
 }
