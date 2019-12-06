@@ -1,7 +1,6 @@
 <template>
   <div class="search">
     <div class="search__container">
-      <button v-on:click="buttonClicked" class="btn">Click Me</button>
 
       <div v-if="categories" class="select-menu">
         <label for="" class="select-menu__label">Category:</label>
@@ -51,6 +50,7 @@
     mounted () {
       let categories = this.getCategories();
       let breeds = this.getBreeds();
+      let results = this.getCats();
     },
     methods: {
 
@@ -66,10 +66,11 @@
         }).catch( error => { console.log(error); });
       },
 
-      buttonClicked: function (event) {
-        axios.get('https://api.thecatapi.com/v1/images/search?limit=15').then( response => {
+      getCats() {
+        axios.get('https://api.thecatapi.com/v1/images/search?limit=15').then((response) => {
           this.results = response.data;
-        });
+          console.log('dsfs');
+        }).catch( error => { console.log(error); });
       },
 
       onCategoryChange(event) {
