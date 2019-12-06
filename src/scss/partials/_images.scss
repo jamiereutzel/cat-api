@@ -2,13 +2,20 @@
 Images
 *************************************************************/
 
-.img-container {
+.img-grid {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: $base-margin;
-}
 
-.img {
-    max-height: 500px;
+    &__item {
+        flex: 0 0 33%;
+    }
+
+    &__img {
+        padding: 5px;
+        width: 100%;
+    }
 }
