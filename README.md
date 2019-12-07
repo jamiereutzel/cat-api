@@ -15,10 +15,8 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### Compiles and minifies for production and syncs with the gh-pages branch
 ```
-npm run lint
+npm run serve
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Project can be viewed here: [https://jamiereutzel.github.io/cat-api/](https://jamiereutzel.github.io/cat-api/).
