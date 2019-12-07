@@ -24,6 +24,14 @@ h1,
     color: $primary;
 }
 
+h2,
+.h2 {
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-size: 20px;
+    color: $primary;
+}
+
 a {
     text-decoration: none;
     font-weight: 600;
