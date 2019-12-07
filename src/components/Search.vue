@@ -6,7 +6,7 @@
       <div v-if="categories" class="select-menu">
         <label for="select-menu-category" class="select-menu__label">Category:</label>
         <div class="select-menu__wrapper">
-          <img src="http://cdn.onlinewebfonts.com/svg/img_106603.png" class="select-menu__icon" />
+          <img src="http://cdn.onlinewebfonts.com/svg/img_106603.png" class="select-menu__icon" aria-hidden="true" />
           <select class="select-menu__select" id="select-menu-category" @change="onCategoryChange($event)">
             <option value="" disabled selected hidden>Select</option>
             <option v-for="category in categories" v-bind:value="category.id">{{category.name}}</option>
@@ -17,7 +17,7 @@
       <div v-if="breeds" class="select-menu">
         <label for="select-menu-breed" class="select-menu__label">Breeds:</label>
         <div class="select-menu__wrapper">
-          <img src="http://cdn.onlinewebfonts.com/svg/img_106603.png" class="select-menu__icon" />
+          <img src="http://cdn.onlinewebfonts.com/svg/img_106603.png" class="select-menu__icon" aria-hidden="true" />
           <select class="select-menu__select" id="select-menu-breed" @change="onBreedChange($event)">
             <option value="" disabled selected hidden>Select</option>
             <option v-for="breed in breeds" v-bind:value="breed.id">{{breed.name}}</option>
@@ -28,7 +28,7 @@
 
       <div v-if="results" class="img-grid">
         <div v-for="result in results" class="img-grid__item">
-          <img v-bind:src="result.url" class="img-grid__img" />
+          <img v-bind:src="result.url" class="img-grid__img" alt="Description of Cat Image" />
         </div>
       </div>
 
@@ -86,7 +86,6 @@
           this.results = response.data;
         }).catch( error => { console.log(error); });
       }
-
     }
   }
 </script>

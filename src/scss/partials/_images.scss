@@ -9,11 +9,13 @@ Images
     align-items: center;
     justify-content: center;
 
-    @media (min-width: $screen-sm) { flex-direction: row; }
+    @media (min-width: $screen-xs) { flex-direction: row; }
 
     &__item {
         padding: 5px;
         height: 300px;
+
+        @media (min-width: $screen-xs) { flex: 0 0 45%; }
 
         @media (min-width: $screen-md) { flex: 0 0 30%; }
     }

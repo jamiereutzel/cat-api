@@ -15,3 +15,27 @@ Utility
     &--bottom { padding-bottom: $base-padding; }
     &--left { padding-left: $base-padding; }
 }
+
+/* hide an element from the screen but visible to screen readers */
+.u-sr-only {
+    position: absolute;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap; /* 1 */
+    clip: rect(0 0 0 0);
+}
+
+.u-sr-reveal {
+    position: relative;
+    display: block;
+    margin: 12px 0 0;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    white-space: normal;
+    clip: auto;
+}
