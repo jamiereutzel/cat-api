@@ -3,17 +3,17 @@ Buttons
 *************************************************************/
 
 .btn {
-  display: inline-block;
   position: relative;
-  padding: 10px 25px;
-  font-size: 20px;
-  font-family: $text-font;
-  font-weight: 600;
-  background: $gray;
+  display: inline-block;
   border: 2px solid $primary;
-  text-transform: uppercase;
-  color: $primary;
+  padding: 10px 25px;
+  background: $gray;
   cursor: pointer;
+  text-transform: uppercase;
+  font-family: $text-font;
+  font-size: 20px;
+  font-weight: 600;
+  color: $primary;
   transition: background $transition-duration, color $transition-duration;
 
   &:focus,

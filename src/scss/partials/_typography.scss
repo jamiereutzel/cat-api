@@ -2,35 +2,30 @@
 Typography
 *************************************************************/
 
-/*
- * Global Typographic Treatment
- *
- ************************************************************/
+
+/* Global Typographic Treatment */
 
 html,
 body {
+    background-color: $gray;
+    line-height: $base-line-height;
     font-family: $text-font;
     font-size: $base-font-size;
-    line-height: $base-line-height;
     color: $text-color;
-    background-color: $gray;
 }
 
-/*
-* Headers
-*
-************************************************************/
+/* Headers */
 
 h1,
 .h1 {
-    font-size: 48px;
-    font-family: $primary-font;
     text-transform: uppercase;
+    font-family: $primary-font;
+    font-size: 48px;
     color: $primary;
 }
 
 a {
-    color: $primary;
-    font-weight: 600;
     text-decoration: none;
+    font-weight: 600;
+    color: $primary;
 }

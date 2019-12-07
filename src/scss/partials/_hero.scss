@@ -3,8 +3,8 @@ Hero
 *************************************************************/
 
 .hero {
+    margin-top: ($base-margin * 3);
+    padding: ($base-padding * 2);
     background-color: $yellow;
     text-align: center;
-    padding: ($base-padding * 2);
-    margin-top: ($base-margin * 3);
 }

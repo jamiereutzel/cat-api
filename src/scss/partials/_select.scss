@@ -6,14 +6,14 @@ Buttons
 
     display: inline-flex;
     flex-direction: column;
-    text-align: left;
     margin-right: 0;
+    text-align: left;
 
     &:last-child { margin-top: $base-margin; }
 
     @media (min-width: $screen-sm) {
-        margin-right: ($base-margin * 2);
         margin-top: 0;
+        margin-right: ($base-margin * 2);
 
         &:last-child { margin-top: 0; }
     }
@@ -24,20 +24,20 @@ Buttons
     }
 
     &__select {
+        border: 2px solid $primary;
+        border-radius: 0;
+        padding-left: $base-padding;
+        width: 350px;
+        height: 51px;
+        background: $gray;
+        text-transform: uppercase;
+        font-family: $text-font;
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        width: 350px;
-        padding-left: $base-padding;
-        height: 51px;
-        font-size: 20px;
-        font-family: $text-font;
-        font-weight: 600;
-        background: $gray;
-        border: 2px solid $primary;
-        border-radius: 0;
-        text-transform: uppercase;
-        color: $primary;
     }
 
     &__label {
@@ -46,11 +46,11 @@ Buttons
     }
 
     &__icon {
-        height: 15px;
-        width: 15px;
         position: absolute;
         top: 50%;
         right: 8px;
+        width: 15px;
+        height: 15px;
         pointer-events: none;
         transform: translate(-50%, -50%);
     }
@@ -59,8 +59,8 @@ Buttons
 .menu-options {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     @media (min-width: $screen-sm) { flex-direction: row; }
 }

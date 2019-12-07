@@ -2,10 +2,10 @@
 Global Styles
 *************************************************************/
 
-// Globals
+/* Globals */
 @import "globals/variables";
 
-// Partials
+/* Partials */
 @import "partials/buttons";
 @import "partials/hero";
 @import "partials/images";
@@ -16,6 +16,6 @@ Global Styles
 
 
 #app {
-    max-width: 1100px;
     margin: 0 auto;
+    max-width: 1100px;
 }
